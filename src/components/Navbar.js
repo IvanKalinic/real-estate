@@ -41,7 +41,7 @@ const MenuBars = styled.i`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-50%,35%);
+    transform: translate(-50%, 35%);
     display: block;
   }
 `;
@@ -70,11 +70,11 @@ const NavBtn = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/">Real estate</Logo>
-      <MenuBars>
+      <MenuBars onClick={toggle}>
         <Bars />
       </MenuBars>
       <NavMenu>
